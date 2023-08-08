@@ -22,6 +22,8 @@ RUN mv httpd.conf /etc/httpd/conf/
 
 RUN wget https://raw.githubusercontent.com/ingsistemascloud/moodle/master/config/start.sh
 
+RUN yum install -y crontabs
+
 RUN systemctl enable httpd
 
 EXPOSE 80
